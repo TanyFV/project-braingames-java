@@ -1,2 +1,3 @@
+![Java CI](https://github.com/TanyFV/project-braingames-java/workflows/Java%20CI/badge.svg)
 # project-braingames-java
-[![Build Status](https://travis-ci.com/TanyFV/project-braingames-java.svg?branch=master)](https://travis-ci.com/TanyFV/project-braingames-java)
+
