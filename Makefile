@@ -18,3 +18,6 @@ build:
 update:
 	./mvnw versions:update-properties
 	./mvnw versions:display-plugin-updates
+	
+code-lint:
+	./mvnw checkstyle:checkstyle

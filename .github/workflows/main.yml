@@ -14,5 +14,7 @@ jobs:
           java-version: '14'
       - name: Delete jar-file
         run: make clean
+      - name: Code lint
+        run: make code-lint
       - name: Build with Maven
         run: make build
