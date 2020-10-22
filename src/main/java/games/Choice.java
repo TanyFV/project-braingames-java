@@ -1,9 +1,11 @@
 package games;
 
+import java.util.Scanner;
 import java.io.IOException;
 
 public class Choice {
     public static void main(String... __) throws IOException {
+        Scanner in = new Scanner(System.in);
         System.out.println("Выберите игру:");
         System.out.println("1 - Проверка на четность");
         System.out.println("2 - Простые числа");
@@ -17,7 +19,7 @@ public class Choice {
             default:
                 System.out.println("Игры с таким номером нет!");
         }
-
+        in.close();
     }
 
 }
