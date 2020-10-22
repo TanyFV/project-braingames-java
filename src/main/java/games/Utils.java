@@ -8,7 +8,7 @@ public class Utils {
     public static String welcomeToBrainGames(String str) {
 
         System.out.println("Welcome to the Brain Games!");
-        System.out.println("Answer \"yes\" if number even otherwise answer \"no\".");
+        System.out.println(str);
         System.out.println("May I have your name?");
 
         Scanner in = new Scanner(System.in);
@@ -18,17 +18,17 @@ public class Utils {
         return userName;
     }
 
-    public static void isCorrectNumber(String userName, Predicate<Integer> pred) {
+    public static void isCorrectNumber(String userName, Predicate<Integer> predicate) {
 
-        final int CORRECT_COUNT = 3;
+        final int ROUND_COUNT = 3;
         Scanner in = new Scanner(System.in);
         int count = 1;
-        while (count <= CORRECT_COUNT) {
+        while (count <= ROUND_COUNT) {
             int number = (int) (Math.random() * (20 - 1)) + 1;
             System.out.println("Question: " + number);
             System.out.print("Your answer: ");
             String userAnswer = in.next();
-            String correctAnswer = (pred.test(number)) ? "yes" : "no";
+            String correctAnswer = (predicate.test(number)) ? "yes" : "no";
 
             if (userAnswer.equals(correctAnswer)) {
                 System.out.println("Correct!");
@@ -42,6 +42,7 @@ public class Utils {
             }
         }
         System.out.println("Congratulations, " + userName);
+        in.close();
 
     }
 
