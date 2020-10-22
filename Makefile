@@ -12,12 +12,12 @@ clean:
 
 build-run: build run
 
-build: 
+build: code-lint
 	./mvnw clean package
 
 update:
 	./mvnw versions:update-properties
 	./mvnw versions:display-plugin-updates
-	
+
 code-lint:
 	./mvnw checkstyle:checkstyle
