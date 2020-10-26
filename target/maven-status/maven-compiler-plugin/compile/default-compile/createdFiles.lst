@@ -1,4 +1,6 @@
+games/Engine.class
 games/Calculator.class
+games/GenerateData.class
 games/Choice.class
 games/Utils.class
 games/BrainGames.class

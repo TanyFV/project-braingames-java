@@ -5,7 +5,7 @@ compile: clean
 	javac -d ./target/classes ./src/main/java/games/BrainGames.java
 
 run:
-	java -jar  /home/haruka/project-braingames-java/target/project-braingames-java-1.0-SNAPSHOT-jar-with-dependencies.jar
+	java -jar  /home/haruka/braingames-java-project/project-braingames-java/target/project-braingames-java-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 clean:
 	rm -rf ./target

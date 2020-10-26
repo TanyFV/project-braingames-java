@@ -21,6 +21,7 @@
         <log4j-slf4j-impl.version>2.13.3</log4j-slf4j-impl.version>
         
         <!--Plugins-->
+        <for-java-pairs.version>14</for-java-pairs.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
@@ -45,14 +46,13 @@
             <artifactId>commons-math3</artifactId>
             <version>3.6.1</version>
         </dependency>
-        <!-- COMMON REP FROM jitpack.io for another projects
-        <dependency> 
-            <groupId>com.github.TanyFV</groupId> 
-            <artifactId>project-braingames-java</artifactId> 
-            <version>1.0-SNAPSHOT</version> 
-        </dependency>-->
-
-
+        <!-- Class Pair -->
+        <dependency>
+            <groupId>com.github.ShafigullinIK</groupId>
+            <artifactId>for-java-pairs</artifactId>
+            <version>${for-java-pairs.version}</version>
+        </dependency>
+       
     </dependencies>
 
     <repositories> 
